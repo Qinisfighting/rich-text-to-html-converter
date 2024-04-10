@@ -8,9 +8,9 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <div className="w-full h-full text-center mx-auto pb-6 px-4 bg-[url('./assets/background.jpg')]">   
-        <h1 className="text-3xl font-semibold mx-auto pt-20">
-          <span className="text-4xl text-green-700  px-4 italic">R̶i̶c̶h̶ ̶T̶e̶x̶t̶</span> to <span className='text-4xl text-red-600 '>HTML</span> Converter 
+    <div className="w-full h-full text-center mx-auto pb-6 px-4 bg-no-repeat bg-center bg-[url('./assets/background.jpg')]">   
+        <h1 className="text-3xl font-bold mx-auto pt-20">
+          <span className="text-4xl text-green-700  px-4">R̶i̶c̶h̶ ̶T̶e̶x̶t̶</span> to <span className='text-4xl text-red-600 '>HTML</span> Converter 
         </h1>
         <Converter /> 
         <Footer />
