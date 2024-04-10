@@ -39,9 +39,9 @@ const [showHTML, setShowHTML] = useState(false);
                 <Editor
                         editorState={editorState}
                         onEditorStateChange={setEditorState}
-                        wrapperStyle={{ marginBottom: "3em", fontSize: "calc(10px + 1.5vmin)", backgroundColor:"white"}}
-                        editorStyle={{padding:"10px 20px", border: "1px solid gray", borderRadius: "0.3em", height:300}}
-                        toolbarStyle={{border: "1px solid gray", borderRadius: "0.3em",}}
+                        wrapperStyle={{ marginBottom: "3em", fontSize: "calc(10px + 1.5vmin)", backgroundColor:"white",borderRadius: "7px",border: "1px solid gray"}}
+                        editorStyle={{padding:"10px 20px", borderRadius: "1em", minHeight:300}}
+                        toolbarStyle={{borderBottom: "1px dashed gray",borderRadius: "7px 7px 0 0"}}
                  />
                 {!showHTML ? (
                   <Button className="w-full" variant="destructive" onClick={() => setShowHTML(true)}>
@@ -53,9 +53,9 @@ const [showHTML, setShowHTML] = useState(false);
                   </Button>
                 )}   
                {showHTML&& 
-               <div className="w-full flex flex-col justify-center mx-auto border border-gray-500 rounded-md bg-white mt-16">   
+               <div className="w-full flex flex-col justify-center mx-auto border border-gray-400 rounded-md bg-white mt-16">   
                  <button className="btn self-end" data-clipboard-target="#html" ><img src={copy} className="w-[40px] mt-6 mx-10" title="COPY HTML"></img></button>      
-                 <div id="html" className="mb-6 text-justify py-6 px-10 self-start text-xl">            
+                 <div id="html" className="mb-6 text-justify py-6 px-10 self-start text-l">            
                      {convertedContent}
                  </div>
                 
