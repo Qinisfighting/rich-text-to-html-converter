@@ -75,7 +75,8 @@ const Converter: React.FC<ConverterProps> = () => {
               title="COPY TO CLIPBOARD"
               onClick={() => {
                 toast({
-                  title: "Yep, content has been copied to the clipboard😉.",
+                  title:
+                    "Yep, what you want has been copied to the clipboard😉.",
                 });
               }}
             ></img>
