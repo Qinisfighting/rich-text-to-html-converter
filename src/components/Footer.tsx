@@ -15,7 +15,7 @@ export default function Footer() {
   }
 
   return (
-    <footer className="mt-52">
+    <footer className="h-28 mt-72 pt-20">
       {isTop && (
         <img
           src={upArrow}

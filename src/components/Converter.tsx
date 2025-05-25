@@ -80,10 +80,7 @@ const Converter: React.FC<ConverterProps> = () => {
               }}
             ></img>
           </button>
-          <div
-            id="html"
-            className="mb-6 text-justify py-6 px-10 self-start text-l"
-          >
+          <div id="html" className="w-full text-justify py-6 px-10 text-l">
             {convertedContent}
           </div>
         </div>
